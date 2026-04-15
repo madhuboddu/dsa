@@ -14,6 +14,13 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
+    /*
+     * Complete the 'isAlphabeticPalindrome' function below.
+     *
+     * The function is expected to return a BOOLEAN.
+     * The function accepts STRING code as parameter.
+     */
+
     public static boolean isAlphabeticPalindrome(String code) {
     
          ArrayList<Character> letterList = new ArrayList<Character>();
@@ -23,7 +30,8 @@ class Result {
             char chaer = code.charAt(i);
             
             if( (chaer >= 'A' && chaer <= 'Z') || (chaer >= 'a' && chaer <= 'z')){
-                letterList.add(chaer);
+                
+                letterList.add(Character.toLowerCase(chaer));
             }
         }
     
